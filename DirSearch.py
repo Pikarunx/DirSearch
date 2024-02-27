@@ -1,8 +1,13 @@
 import requests
 import pyfiglet
 from colorama import Fore,Style,init
+import os
 
 logo = pyfiglet.figlet_format("DİRSEARCH")
+try:
+    os.system("clear")
+except:
+    os.system("cls")
 print(Fore.RED + logo + Style.RESET_ALL)
 
 
